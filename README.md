@@ -20,7 +20,7 @@ This is a very specific tutorial that can be modified for other configurations.
 - **Client**: macOS (user `kathleenhiggins`)  
 - You already installed **Conda** on Windows (full Anaconda or Miniconda is fine)
 
-***A big note here. This tutorial is easily modifiable for other usernames/setups. Wherever you see "schot," that's our Windows local account username in the tutorial. Wherever you see "kathleenhiggins," that's the username that is attempting to SSH in to the Windows machine.***
+***A big note here. This tutorial is easily modifiable for other usernames/setups. Wherever you see "schot," that's our Windows local account username in the tutorial. Wherever you see "kathleenhiggins," that's the example username that is attempting to SSH in to the Windows machine.***
 
 ---
 
@@ -57,8 +57,8 @@ Tue Nov 18 23:15:12 2025
 +-----------------------------------------------------------------------------------------+
 ```
 The important bits:
-	•	Driver Version matches what you installed.
-	•	CUDA Version shows 13.0 (this is the maximum CUDA your driver supports).
+- Driver Version matches what you installed.
+- CUDA Version shows 13.0 (this is the maximum CUDA your driver supports).
 
 # 2. Confirm CUDA Toolkit Version
 
@@ -68,8 +68,8 @@ If you install the CUDA toolkit itself (for nvcc, etc.), you can verify its vers
 
 `nvcc --version`
 For PyTorch, you mainly care that:
-	•	The driver supports at least the CUDA version you choose for PyTorch wheels.
-	•	nvidia-smi works and shows the GPU.
+- The driver supports at least the CUDA version you choose for PyTorch wheels.
+- nvidia-smi works and shows the GPU.
 
 # 3. Enable OpenSSH Server on Windows 
 This uses the built-in Windows OpenSSH, not the GitHub/portable build.
