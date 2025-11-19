@@ -284,20 +284,20 @@ The key idea: the machine must stay powered on, and sshd must be running for rem
 
 # 11. (Optional) Set Up Python + CUDA Environment for Your Model
 Install Conda, Python, and any other dependancies, if you're running DL on the GPU.
-# 11.2 Create a conda enviroment (example)
+### 11.2 Create a conda enviroment (example)
 ```
 # In PowerShell or cmd inside your SSH session:
 conda create -n neural_ode_env python=3.11 -y
 conda activate neural_ode_env
 ```
-# 11.3 Install PyTorch with CUDA (match your driver / CUDA support)
+### 11.3 Install PyTorch with CUDA (match your driver / CUDA support)
 ```
 # Example – replace with whatever PyTorch recommends for CUDA 13.0
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
 ```
-# 11.4 Clone repo and install requirements 
+### 11.4 Clone repo and install requirements 
 
-# 11.5 Sanity Check: PyTorch sees the GPU
+### 11.5 Sanity Check: PyTorch sees the GPU
 ```
 python -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0))"
 ```
