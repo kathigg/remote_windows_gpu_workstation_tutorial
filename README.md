@@ -277,9 +277,7 @@ If you see a password prompt instead of a passphrase prompt, it usually means:
 # 10. Keep Workstation Awake
 To avoid the GPU box going to sleep when you’re remote:
 	1.	On Windows, open Settings → System → Power & battery.
-	2.	Under Screen and Sleep, choose:
-	•	Screen: “Never” (for plugged in, if you’re okay with that)
-	•	Sleep: “Never” (on AC power)
+	2.	Under Screen and Sleep, choose: Screen: “Never” (for plugged in, if you’re okay with that) and Sleep: “Never” (on AC power)
 	3.	Optional: open Additional power settings → Change plan settings → Change advanced power settings and disable deep sleep / hybrid sleep for plugged-in mode.
 
 The key idea: the machine must stay powered on, and sshd must be running for remote login to work. There’s no way around the machine needing to be on.
