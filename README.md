@@ -268,17 +268,17 @@ ssh into the account: `ssh schot@<SERVERIP>`
 You'll be prompted for your  key passphrase. Enter it, and you should eb able to enter the system. 
 
 If you see a password prompt instead of a passphrase prompt, it usually means:
-	•	The SSH key isn’t being offered, or
-	•	Permissions/paths of authorized_keys / administrators_authorized_keys are wrong, or
-	•	sshd isn’t reading the files due to Match Group administrators misconfig.
+- The SSH key isn’t being offered, or
+- Permissions/paths of authorized_keys / administrators_authorized_keys are wrong, or
+- sshd isn’t reading the files due to Match Group administrators misconfig.
 
 (Use ssh -vvv schot@<SERVER_IP> from macOS for debugging.)
 
 # 10. Keep Workstation Awake
 To avoid the GPU box going to sleep when you’re remote:
-	1.	On Windows, open Settings → System → Power & battery.
-	2.	Under Screen and Sleep, choose: Screen: “Never” (for plugged in, if you’re okay with that) and Sleep: “Never” (on AC power)
-	3.	Optional: open Additional power settings → Change plan settings → Change advanced power settings and disable deep sleep / hybrid sleep for plugged-in mode.
+1. On Windows, open Settings → System → Power & battery.
+2. Under Screen and Sleep, choose: Screen: “Never” (for plugged in, if you’re okay with that) and Sleep: “Never” (on AC power)
+3. Optional: open Additional power settings → Change plan settings → Change advanced power settings and disable deep sleep / hybrid sleep for plugged-in mode.
 
 The key idea: the machine must stay powered on, and sshd must be running for remote login to work. There’s no way around the machine needing to be on.
 
@@ -308,5 +308,5 @@ True
 NVIDIA RTX A400
 ```
 # Done. 
-
+Thanks for sticking with me. 
 
